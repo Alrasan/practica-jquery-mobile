@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="../../modules/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="../../modules/jquery-mobile/blackandblue.min.css">
+        <link rel="stylesheet" href="../../modules/jquery-mobile/jquery.mobile-1.4.5.css">
+        <link rel="stylesheet" href="../../css/style.css">
+
+    </head>
+
+    <body class="ui-mobile-viewport ui-overlay-a">
+        <!--
+            
+            ALUMN SELECTION PAGE
+            
+        -->
+        <div data-role="page" id="list" data-theme="d">
+            <div data-role="header" data-position="inline">
+                <h1>Evaluación Alumnado</h1>
+                <a href="#" data-rel="back" data-icon="arrow-l"  data-role="button" role="button">Back</a>
+                <a href="#" class="ui-btn ui-btn-inline ui-icon-power ui-btn-icon-left ui-mini salir">Salir</a>
+            </div>
+            <div data-role="content" class="ui-content" data-theme="d">
+                <form id="alumnSel" action="#eval" method="post">
+                    <div class="ui-field-contain">
+                        <select name="select-custom-4" id="select-custom-4" data-native-menu="false">
+                            <option selected value="">Seleccione el alumno a evaluar</option>
+                            <optgroup label="2º DAM">
+                                <option value="Pedro García">Pedro García</option>
+                                <option value="Juan López">Juan López</option>
+                                <option value="Samuel Fonseca">Samuel Fonseca</option>
+                            </optgroup>
+                            <optgroup label="2º DAW">
+                                <option value="Carlos Pérez">Carlos Pérez</option>
+                                <option value="Alex Peña">Alex Peña</option>
+                                <option value="Jorge Huete">Jorge Huete</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a"></div>
+                        <div class="ui-block-b">
+                            <input type="submit" id="alumnselect" disabled data-theme="d" value="Continuar">
+                        </div>
+                        <div class="ui-block-c"></div>
+                    </div>
+                </form>
+            </div>
+            <div data-role="footer" data-position="fixed" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                <h5>Selección del Alumno</h5></div>
+        </div>
+        <script type="text/javascript" src="../js/list.js"></script>
+    </body>
+
+</html>
