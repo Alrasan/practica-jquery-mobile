@@ -52,3 +52,7 @@ and open the template in the editor.
 .ui-li-static.ui-collapsible > .ui-collapsible-content {
     border-bottom-width: 0;
 }
+
+.error{
+    color: red;
+}
