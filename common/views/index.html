@@ -15,6 +15,8 @@ and open the template in the editor.
         <link rel="stylesheet" href="../../modules/jquery-mobile/blackandblue.min.css">
         <link rel="stylesheet" href="../../modules/jquery-mobile/jquery.mobile-1.4.5.css">
         <link rel="stylesheet" href="../../css/style.css">
+        <script type="text/javascript" src="../../modules/jquery-validate/jquery.validate.js"></script>
+        <script type="text/javascript" src="../../modules/jquery-validate/additional-methods.js"></script>
 
     </head>
 
@@ -33,6 +35,8 @@ and open the template in the editor.
             <div data-role="content" class="ui-content" data-theme="d">
 
                 <form id="formLogin" action="#list" method="post">
+                    <div id="successin"></div>
+                    <div id="errorin"></div>
                     <div  data-role="fieldcontain">
                         <input type="text" name="user" id="user" value="" placeholder="Nombre de usuario" class="ui-input-text" data-theme="a" data-clear-btn="true" />
                     </div>
@@ -54,7 +58,7 @@ and open the template in the editor.
                 <h1>Login</h1>
             </div>
         </div>
-        <script type="text/javascript" src="../js/index.js"></script>
+        <script type="text/javascript" src="../js/login.js"></script>
     </body>
 
 </html>
