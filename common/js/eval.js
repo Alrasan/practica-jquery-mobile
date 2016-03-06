@@ -120,7 +120,7 @@ $(document).ready(function () {
         	expresion_oral += 0.5;
         }
         
-        var calificacion = presentacion*0.1 + expresion_oral*2.5 + contenidos*0.65;
+        var calificacion = presentacion*0.1 + expresion_oral*0.25 + contenidos*0.65;
 
        // alert("    "+alumno+"\r\nContenidos:  "+contenidos+"\r\n Presentacion:  "+presentacion+"\r\n Expresión Oral:  "+expresion_oral+"\r\n Calificación:  "+calificacion);
 
