@@ -31,35 +31,25 @@ and open the template in the editor.
                 <a href="#" class="ui-btn ui-btn-inline ui-icon-power ui-btn-icon-left ui-mini salir">Salir</a>
             </div>
             <div data-role="content" class="ui-content" data-theme="d">
-                <form id="alumnSel" action="#eval" method="post">
-                    <div class="ui-field-contain">
-                        <select name="alumno" id="alumno" data-native-menu="false">
-                            <option selected value="">Seleccione el alumno a evaluar</option>
-                            <optgroup label="2º DAM">
-                                <option value="Pedro García">Pedro García</option>
-                                <option value="Juan López">Juan López</option>
-                                <option value="Samuel Fonseca">Samuel Fonseca</option>
-                            </optgroup>
-                            <optgroup label="2º DAW">
-                                <option value="Carlos Pérez">Carlos Pérez</option>
-                                <option value="Alex Peña">Alex Peña</option>
-                                <option value="Jorge Huete">Jorge Huete</option>
-                            </optgroup>
-                        </select>
+                <div class="ui-grid-b">
+                    <div class="ui-block-a"></div>
+                    <div class="ui-block-b">
+                        <div id="alumno"></div>
+                        <div id="contenidos"></div>
+                        <div id="presentacion"></div>
+                        <div id="expresion"></div>
+                        <div id="calificacion"></div>
+                        <form  action="#eval" method="post">
+                            <input type="submit" id="evaluaragain" data-theme="d" value="Evaluar otro Alumno">
+                        </form>
                     </div>
-                    <div class="ui-grid-b">
-                        <div class="ui-block-a"></div>
-                        <div class="ui-block-b">
-                            <input type="submit" id="alumnselect" disabled data-theme="d" value="Continuar">
-                        </div>
-                        <div class="ui-block-c"></div>
-                    </div>
-                </form>
+                    <div class="ui-block-c"></div>
+                </div>
             </div>
             <div data-role="footer" data-position="fixed" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
-                <h5>Selección del Alumno</h5></div>
+                <h5>Calificación del Alumno</h5></div>
         </div>
-        <script type="text/javascript" src="../js/list.js"></script>
+        <script type="text/javascript" src="../js/calificacion.js"></script>
     </body>
 
 </html>

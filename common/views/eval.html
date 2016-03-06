@@ -32,6 +32,13 @@ and open the template in the editor.
             </div>
 
             <div data-role="content" class="ui-content" data-theme="d">
+            <div class="ui-grid-b">
+                    <div class="ui-block-a"></div>
+                    <div class="ui-block-b">
+                        <div id="alumno"></div>
+                    </div>
+                    <div class="ui-block-c"></div>
+                </div>
                 <form id="alumEval" action="#eval" method="post">
                     <ul data-role="listview" data-inset="true" data-shadow="false">
                         <li data-role="collapsible" data-iconpos="right" data-inset="false">
@@ -43,28 +50,28 @@ and open the template in the editor.
                                             <h2>Planteamiento</h2>
                                             <ul data-role="listview" data-theme="b">
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="objetivos">
                                                         Objetivos
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="objetivos" id="objetivos" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="recursos">
                                                         Recursos utilizados
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="recursos" id="recursos" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="destinatarios">
                                                         Destinatarios
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="destinatarios" id="destinatarios" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="justificacion">
                                                         Justificación del proyecto
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="justificacion" id="justificacion" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                             </ul>
                                         </li>
@@ -72,28 +79,28 @@ and open the template in the editor.
                                             <h2>Contenido</h2>
                                             <ul data-role="listview" data-theme="b">
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="metodologia">
                                                         Metodología seguida
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="metodologia" id="metodologia" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="claridad">
                                                         Claridad
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="claridad" id="claridad" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="actividades">
                                                         Actividades o acciones realizadas
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="actividades" id="actividades" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="documentacion">
                                                         Documentación elaborada
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="documentacion" id="documentacion" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                             </ul>
                                         </li>
@@ -101,16 +108,16 @@ and open the template in the editor.
                                             <h2>Resultados obtenidos</h2>
                                             <ul data-role="listview" data-theme="b">
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="conclusiones">
                                                         Conclusiones
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="conclusiones" id="conclusiones" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                                 <li>  
-                                                    <label for="slider-3">
+                                                    <label for="conseguido">
                                                         Objetivos conseguidos y grado de consecución
                                                     </label>
-                                                    <input name="slider-2" id="slider-2" min="0" max="10" value="5" data-show-value="true" type="range">
+                                                    <input name="conseguido" id="conseguido" min="0" max="10" value="5" data-show-value="true" type="range">
                                                 </li>
                                             </ul>
                                         </li>
@@ -123,24 +130,24 @@ and open the template in the editor.
                             <ul data-role="listview" data-theme="b">
 
                                 <li>
-                                    <label for="flip-5">Presentación escrita</label>
-                                    <select name="flip-5" id="flip-5" data-role="slider">
+                                    <label for="escrita">Presentación escrita</label>
+                                    <select name="escrita" id="escrita" data-role="slider">
                                         <option value="no">No</option>
                                         <option value="si">Sí</option>
                                     </select>
 
                                 </li>
                                 <li>
-                                    <label for="flip-5">Redacción y claridad del texto</label>
-                                    <select name="flip-5" id="flip-5" data-role="slider">
+                                    <label for="redaccion">Redacción y claridad del texto</label>
+                                    <select name="redaccion" id="redaccion" data-role="slider">
                                         <option value="no">No</option>
                                         <option value="si">Sí</option>
                                     </select>
 
                                 </li>
                                 <li>
-                                    <label for="flip-5">Organización del contenido</label>
-                                    <select name="flip-5" id="flip-5" data-role="slider">
+                                    <label for="organizacion">Organización del contenido</label>
+                                    <select name="organizacion" id="organizacion" data-role="slider">
                                         <option value="no">No</option>
                                         <option value="si">Sí</option>
                                     </select>
@@ -153,31 +160,31 @@ and open the template in the editor.
                             <fieldset data-role="controlgroup" data-theme="b">
                                 <label>
                                     Entrada del alumno
-                                    <input id="choose-birds-inset" type="checkbox">
+                                    <input id="entrada" name="entrada" type="checkbox">
                                 </label>
                                 <label>
                                     Indumentaria
-                                    <input id="choose-humans-inset" type="checkbox">
+                                    <input id="indumentaria" name="indumentaria" type="checkbox">
                                 </label>
                                 <label>
                                     Introducción: ¿Es atractiva? ¿Queda claro el proyecto?
-                                    <input id="choose-fish-inset" type="checkbox">
+                                    <input id="introduccion" name="introduccion" type="checkbox">
                                 </label>
                                 <label>
                                     Desarrollo: Orden en las ideas. Claridad en la exposición. Aclaración de términos técnicos
-                                    <input id="choose-fish-inset" type="checkbox">
+                                    <input id="desarrollo" name="desarrollo" type="checkbox">
                                 </label>
                                 <label>
                                     Conclusión: ¿Queda claro el objetivo del proyecto? ¿Lo vende bien?
-                                    <input id="choose-fish-inset" type="checkbox">
+                                    <input id="conclusionexp" name="conclusionexp" type="checkbox">
                                 </label>
                                 <label>
                                     Seguridad en lo que expone. La presentación está trabajada (power -point otros)
-                                    <input id="choose-fish-inset" type="checkbox">
+                                    <input id="seguridad" name="seguridad" type="checkbox">
                                 </label>
                                 <label>
                                     Entusiasmo en lo que expone
-                                    <input id="choose-fish-inset" type="checkbox">
+                                    <input id="entusiasmo" name="entusiasmo" type="checkbox">
                                 </label>
                                 <ul>
 
@@ -186,34 +193,34 @@ and open the template in the editor.
                                         <fieldset data-role="controlgroup" data-theme="b">
                                             <label>
                                                 Entonación
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="entonacion" name="entonacion" type="checkbox">
                                             </label>
                                             <label>
                                                 Volumen
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="volumen" name="volumen" type="checkbox">
                                             </label>
                                             <label>
                                                 Velocidad
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="velocidad" name="velocidad" type="checkbox">
                                             </label>
                                             <label>
                                                 Vacilación en la voz
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="voz" name="voz" type="checkbox">
                                             </label>
                                             <label>
                                                 Pausas
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="pausas" name="pausas" type="checkbox">
                                             </label>
                                             <label>
                                                 Utilización de muletillas
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="muletillas" name="muletillas" type="checkbox">
                                             </label>
                                         </fieldset>
                                     </li>
                                 </ul>
                                 <label>
                                     Duración: ¿Se adecua a lo estipulado?
-                                    <input id="choose-fish-inset" type="checkbox">
+                                    <input id="duracion" name="duracion" type="checkbox">
                                 </label>
                                 <ul>
 
@@ -222,30 +229,30 @@ and open the template in the editor.
                                         <fieldset data-role="controlgroup" data-theme="b">
                                             <label>
                                                 Mirada: ¿dirige la mirada a todo el auditorio?
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="mirada" name="mirada" type="checkbox">
                                             </label>
                                             <label>
                                                 Sonrisa/expresión facial positiva
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="sonrisa" name="sonrisa" type="checkbox">
                                             </label>
                                             <label>
                                                 Posición correcta del cuerpo
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="posicion" name="posicion" type="checkbox">
                                             </label>
                                             <label>
                                                 Tics, gestos nerviosos
-                                                <input id="choose-fish-inset" type="checkbox">
+                                                <input id="tics" name="tics" type="checkbox">
                                             </label>
                                         </fieldset>
                                     </li>
                                 </ul>
                                 <label>
                                     *Atención del público: * ¿Logra atraer la atención del público?
-                                    <input id="choose-fish-inset" type="checkbox">
+                                    <input id="publico" name="publico" type="checkbox">
                                 </label>
                                 <label>
                                     Preguntas realizadas: ¿Responde de forma coherente?
-                                    <input id="choose-fish-inset" type="checkbox">
+                                    <input id="preguntas" name="preguntas" type="checkbox">
                                 </label>
                             </fieldset>
                         </li> 

@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-        if ($("#select-custom-4").val() != "") {
+        if ($("#alumno").val() != "") {
             console.log($(this).val());
             $('#alumnselect').button('enable');
         } else {
@@ -8,7 +8,7 @@ $(document).ready(function () {
             $('#alumnselect').button('disable');
         }
 
-    $("#select-custom-4").change(function () {
+    $("#alumno").change(function () {
         if ($("#select-custom-4").val() != "") {
             console.log($(this).val());
             $('#alumnselect').button('enable');
@@ -18,6 +18,8 @@ $(document).ready(function () {
         }
     });
     $('#alumnselect').click(function(e){
+        sessionStorage.setItem('alumno', $("#alumno").val());
+        //window.location = "eval.html?alumno="+$("#alumno").val();
         window.location = "eval.html";
     });
     
